@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"  href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+   <!--Primer paso: Encabezado-->
+   <header>
+       <img src="./assets/imagen_alura.svg" alt="Logo Alura" class="logo">
+   </header>
+
+   <!--Segundo Paso: Sección principal (Input y botones)-->
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptador__input" placeholder="Ingresar el texto aquí"></textarea>
+            <div class="encriptador__alerta">
+                <img src="./assets/aviso.svg" alt="Imgen Alerta" class="encriptador__alerta__imagen">
+                <p class="encriptador__texto__alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador__botones">
+                <button type="submit" class="encriptador__botones__encriptar">Encriptar</button>
+                <button type="submit" class="encriptador__botones__desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="desencriptado">
+            <div class="desencriptado__container">
+                <img src="./assets/imagen_animada.svg" alt="Imagen Animación" class="desencriptado__container__animacion">
+                <p class="desencriptado__container__texto1">Ningún mensaje fue encontrado</p>
+                <p class="desencriptado__container__texto2">Ingresa el texto que deseas encriptar o desencriptar </p>
+                
+            </div>
+            <textarea type="mensaje" class="desencriptado__container__mensaje" readonly></textarea>
+            <button type="submit" class="desencriptado__container__boton">Copiar</button>
+
+
+        </section>
+    </main>
+    <!--Tercer Paso: Footer-->
+    <footer>
+        <p class="footer__autor">Autor: Fabián Contreras</p>
+        <a href="https://www.linkedin.com/in/fabian-contreras-salas/" rel="">
+            <img src="./assets/linkedin.svg" class="footer__linkedin" alt="Linkedin">
+        </a>
+        <a href="https://github.com/Fabian7701/fabian7701.github.com" rel="">
+            <img src="./assets/github.svg" class="footer__github" alt="Github">
+        </a>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+
+</body>
+</html>
